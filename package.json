@@ -1,0 +1,24 @@
+{
+  "name": "joke-teller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "netlify": "./node_modules/.bin/netlify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisgerardodev/joke-teller.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luisgerardodev/joke-teller/issues"
+  },
+  "homepage": "https://github.com/luisgerardodev/joke-teller#readme",
+  "devDependencies": {
+    "netlify-cli": "^3.2.4"
+  }
+}

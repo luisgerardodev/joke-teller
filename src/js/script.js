@@ -1,4 +1,19 @@
-import VOICERSS_API_KEY from './apiKey.js';
+// Fetch secret from netlify
+let VOICERSS_API_KEY = '';
+
+
+const getApiKey = async () => {
+  try {
+    const response = await fetch('.netlify/functions/fetch-secret');
+    const data = await response.json();
+    VOICERSS_API_KEY = data.apiKey;
+  } catch (error) {
+    console.log(error);
+  }
+  
+} 
+
+getApiKey();
 
 const button = document.querySelector("#button");
 const audioElement = document.querySelector("#audio");
